@@ -681,10 +681,8 @@
       int moduloDay = duration % (60 * 60 * 24);
       if (moduloDay == 0) {
         myEvent.allDay = YES;
-        myEvent.endDate = [NSDate dateWithTimeIntervalSince1970:_endInterval - 1];
-      } else {
-        myEvent.endDate = [NSDate dateWithTimeIntervalSince1970:_endInterval];
       }
+      myEvent.endDate = [NSDate dateWithTimeIntervalSince1970:_endInterval];
     } else {
       myEvent.endDate = [NSDate dateWithTimeIntervalSince1970:_endInterval];
     }
